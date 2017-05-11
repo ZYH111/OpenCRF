@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="OpenCRF_Main.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Util.cpp" />
+    <ClCompile Include="CRFModel.cpp" />
+    <ClCompile Include="FactorGraph.cpp" />
+    <ClCompile Include="DataSet.cpp" />
+    <ClCompile Include="MHTrain.cpp" />
+    <ClCompile Include="MHTrain1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="DataSet.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="CRFModel.h" />
+    <ClInclude Include="FactorGraph.h" />
+    <ClInclude Include="Constant.h" />
+  </ItemGroup>
+</Project>

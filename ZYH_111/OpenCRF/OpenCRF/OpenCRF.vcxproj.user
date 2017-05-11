@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <MpiDebuggerSchedulerNode>localhost/2</MpiDebuggerSchedulerNode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <MpiDebuggerWorkingDirectory>F:\Lab\Factory\Relation_Mining\Coding\OpenCRF_partial_labeled_parallel\mpi_working_dir</MpiDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-est -method MH+NEW -niter 10 -neval 2 -dstmodel model.txt -trainfile input_fb.txt -gradientstep 0.001</LocalDebuggerCommandArguments>
+    <MpiDebuggerApplicationArguments>-est -gradientstep 0.1 -niter 300 -trainfile data-2sub.txt</MpiDebuggerApplicationArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <MpiDebuggerSchedulerNode>localhost/2</MpiDebuggerSchedulerNode>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-est -niter 10 -gradientstep 0.0005 -trainfile train.dat -testfile -testfile -dstmodel model.txt</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>

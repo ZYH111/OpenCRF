@@ -6,7 +6,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <MpiDebuggerWorkingDirectory>F:\Lab\Factory\Relation_Mining\Coding\OpenCRF_partial_labeled_parallel\mpi_working_dir</MpiDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-est -method MH+NEW -niter 10 -neval 2 -dstmodel model.txt -trainfile input_fb.txt -gradientstep 0.001</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-inf -method MH -niter 10 -neval 1 -srcmodel model1.txt -trainfile input_fb.txt -gradientstep 0.001</LocalDebuggerCommandArguments>
     <MpiDebuggerApplicationArguments>-est -gradientstep 0.1 -niter 300 -trainfile data-2sub.txt</MpiDebuggerApplicationArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
